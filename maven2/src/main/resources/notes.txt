@@ -1,0 +1,6 @@
+D:\programs\apache-tomcat-9.0.109\apache-tomcat-9.0.109\bin>startup.bat
+
+copy to 
+D:\eclipseWorkSpace\test\4\tomcatAloneTest\maven2\target
+
+mvn clean install
