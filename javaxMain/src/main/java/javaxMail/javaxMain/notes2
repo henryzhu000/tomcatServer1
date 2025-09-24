@@ -1,0 +1,13 @@
+[PS] C:\Windows\system32>Get-ReceiveConnector "Client Frontend WIN-CLB73QJNVC2" | fl AuthMechanism,PermissionGroups
+
+
+AuthMechanism    : Tls, Integrated, BasicAuth, BasicAuthRequireTLS
+PermissionGroups : ExchangeUsers
+
+
+
+[PS] C:\Windows\system32>Get-ReceiveConnector "Client Frontend WIN-CLB73QJNVC2" | Add-ADPermission -User "henry" -ExtendedRights "ms-Exch-SMTP-Accept-Any-Recipient"
+
+Identity             User                 Deny  Inherited
+--------             ----                 ----  ---------
+WIN-CLB73QJNVC2\C... CORP\henry           False False

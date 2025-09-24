@@ -1,0 +1,10 @@
+[PS] C:\Windows\system32>Get-ReceiveConnector | ft Name,Server,Bindings,AuthMechanism
+
+Name                                    Server          Bindings                                          AuthMechanism
+----                                    ------          --------                                          -------------
+Default WIN-CLB73QJNVC2                 WIN-CLB73QJNVC2 {0.0.0.0:2525, [::]:2525} ...asicAuthRequireTLS, ExchangeServer
+Client Proxy WIN-CLB73QJNVC2            WIN-CLB73QJNVC2 {[::]:465, 0.0.0.0:465}   ...asicAuthRequireTLS, ExchangeServer
+Default Frontend WIN-CLB73QJNVC2        WIN-CLB73QJNVC2 {[::]:25, 0.0.0.0:25}     ...asicAuthRequireTLS, ExchangeServer
+Outbound Proxy Frontend WIN-CLB73QJNVC2 WIN-CLB73QJNVC2 {[::]:717, 0.0.0.0:717}   ...asicAuthRequireTLS, ExchangeServer
+Client Frontend WIN-CLB73QJNVC2         WIN-CLB73QJNVC2 {[::]:587, 0.0.0.0:587}   ...ed, BasicAuth, BasicAuthRequireTLS
+
